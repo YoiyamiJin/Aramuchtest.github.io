@@ -1,3 +1,8 @@
+/* スムーススクロールのための基本設定 */
+html {
+  scroll-behavior: smooth;
+}
+
 /* ベース設定 */
 body {
   margin: 0;
@@ -9,7 +14,7 @@ body {
 
 /* ヘッダー */
 header {
-  background-color: #a1c7e3; /* 少し濃い目のパステルブルー */
+  background-color: #a1c7e3;
   padding: 20px;
   text-align: center;
   color: #fff;
