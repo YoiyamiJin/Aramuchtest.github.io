@@ -29,4 +29,17 @@ document.addEventListener('DOMContentLoaded', function() {
   mobileToggle.addEventListener('click', function() {
     navLinks.classList.toggle('active');
   });
+
+  // ※ 全てのアンカーリンクに対して、JSで滑らかなスクロールを実装（CSSの scroll-behavior + 併用）
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(event) {
+       event.preventDefault();
+       const target = document.querySelector(this.getAttribute('href'));
+       if (target) {
+         target.scrollIntoView({
+            behavior: 'smooth'
+         });
+       }
+    });
+  });
 });
