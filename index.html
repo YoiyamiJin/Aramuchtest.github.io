@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>スタイリッシュなパステルブルーのサイト</title>
-    <style>
-        body {
-            background-color: #A7C7E7; /* パステルブルー */
-            color: #333;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: auto;
-        }
-        h1 {
-            color: #2E86C1;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アラムch 公式サイト</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>ようこそ！</h1>
-        <p>これはかっこいいパステルブルーのウェブサイトです。</p>
+  <header>
+    <h1>アラムch 公式サイト</h1>
+  </header>
+  <nav>
+    <button id="mobile-menu-toggle">☰</button>
+    <div class="nav-links">
+      <a href="#home">ホーム</a>
+      <a href="#about">アラムchについて</a>
+      <a href="#videos">動画一覧</a>
+      <a href="#contact">お問い合わせ</a>
     </div>
+  </nav>
+  <section class="hero">
+    ようこそ、アラムchへ
+  </section>
+  <div class="container">
+    <section id="about" class="animate-on-scroll">
+      <h2>アラムchについて</h2>
+      <p>ここにアラムchの紹介文を記載します。最新情報や活動内容など、サイト訪問者に向けたメッセージを掲載してください。</p>
+    </section>
+    <section id="videos" class="animate-on-scroll">
+      <h2>動画一覧</h2>
+      <p>最新動画、過去の人気動画など、動画コンテンツを一覧でご紹介するセクションです。各動画へのリンクも追加できます。</p>
+    </section>
+    <section id="contact" class="animate-on-scroll">
+      <h2>お問い合わせ</h2>
+      <p>ご質問やご意見がございましたら、以下のフォームよりご連絡ください。</p>
+      <form>
+        <label for="name">お名前:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">メールアドレス:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">メッセージ:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <input type="submit" value="送信">
+      </form>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 アラムch. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
